@@ -1,19 +1,19 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>AJAX Demo with jQuery</title>
-<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-</head>
-<body>
-Demonstrating AJAX with jQuery
+// JavaScript 
 
-<button id="my-button">Gör en request!</button>
+// Använd jQuery och AJAX
 
-<p>Svar från servern:</p>
-
-<p id="show-server-text"></p>
-
-<script src="jquery-ajax.js"></script>
-</body>
-</html>
+$('#my-button').click(function() { 
+  console.log("Knappen klickades på!") 
+  
+  // Gör en GET request med AJAX i jQuery
+  $.get("http://swapi.co/api/", function(data, textStatus, jqXHR) {
+    // Vilken status?
+    console.log(textStatus);
+    
+    // Visa texten från servern i stycket (<p>) med id:t show-server-text
+    $('#show-server-text').text(data);
+    
+    
+  } )
+} 
+);
