@@ -13,7 +13,7 @@ $('#my-button').click(function() {
   console.log("Knappen klickades på!") 
   
   // Gör en GET request med AJAX i jQuery
-  $.get("http://swapi.co/api/people/1/", function(data, textStatus, jqXHR) {
+  $.get("https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE/top-tracks?country=SE", function(data, textStatus, jqXHR) {
     // Vilken status?
     console.log(textStatus);
     
