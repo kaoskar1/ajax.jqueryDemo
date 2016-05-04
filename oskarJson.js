@@ -18,7 +18,7 @@ $('#my-button').click(function() {
     console.log(textStatus);
   
     // Visa texten från servern i stycket (<p>) med id:t show-server-text
-    $('#show-server-text').text(data);
+    $('#show-server-text').text(name);
     
   } )
 } 
