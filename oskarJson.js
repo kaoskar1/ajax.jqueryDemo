@@ -19,6 +19,7 @@ $('#my-button').click(function() {
   
     // Visa texten från servern i stycket (<p>) med id:t show-server-text
     $('#show-server-text').text(data);
+    console.log(data)
     
   } )
 } 
