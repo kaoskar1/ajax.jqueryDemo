@@ -18,7 +18,7 @@ $('#my-button').click(function() {
     console.log(textStatus);
     var happy = data;
     // Visa texten från servern i stycket (<p>) med id:t show-server-text
-    $('#show-server-text').text(happy.name);
+    $('#show-server-text').text("happy.name");
     
   } )
 } 
