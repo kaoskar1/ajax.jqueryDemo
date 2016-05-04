@@ -21,7 +21,7 @@ $('#my-button').click(function() {
     $('#show-server-text').text(data);
     console.log(data)
     var objectText = JSON.stringify(data)
-    console.log(objectText)
+    console.log(objectText.tracks.items)
   } )
 } 
 );
